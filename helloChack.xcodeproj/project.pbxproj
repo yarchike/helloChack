@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		BF2D00382C0CB56700856919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00372C0CB56700856919 /* AppDelegate.swift */; };
 		BF2D003A2C0CB56700856919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00392C0CB56700856919 /* SceneDelegate.swift */; };
-		BF2D003C2C0CB56700856919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D003B2C0CB56700856919 /* ViewController.swift */; };
-		BF2D003F2C0CB56700856919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D003D2C0CB56700856919 /* Main.storyboard */; };
 		BF2D00412C0CB56900856919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2D00402C0CB56900856919 /* Assets.xcassets */; };
 		BF2D00442C0CB56900856919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D00422C0CB56900856919 /* LaunchScreen.storyboard */; };
+		BF2D004C2C0CB83000856919 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D004B2C0CB83000856919 /* QuoteViewController.swift */; };
+		BF2D00522C0CC3DE00856919 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00512C0CC3DE00856919 /* CustomButton.swift */; };
+		BF2D00542C0CC55800856919 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00532C0CC55800856919 /* NetworkManager.swift */; };
+		BF2D00572C0CC65200856919 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00562C0CC65200856919 /* Quote.swift */; };
+		BF2D00592C0CCC2D00856919 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00582C0CCC2D00856919 /* QuoteManager.swift */; };
+		BF2D005E2C0CCCF700856919 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF2D005D2C0CCCF700856919 /* RealmSwift */; };
+		BF2D00602C0DAF2A00856919 /* GroupAllQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D005F2C0DAF2A00856919 /* GroupAllQuotesViewController.swift */; };
+		BF2D00622C0DAF4500856919 /* AllQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D00612C0DAF4500856919 /* AllQuotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF2D00342C0CB56700856919 /* helloChack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloChack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2D00372C0CB56700856919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2D00392C0CB56700856919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF2D003B2C0CB56700856919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF2D003E2C0CB56700856919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2D00402C0CB56900856919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2D00432C0CB56900856919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2D00452C0CB56900856919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2D004B2C0CB83000856919 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		BF2D00512C0CC3DE00856919 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BF2D00532C0CC55800856919 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BF2D00562C0CC65200856919 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		BF2D00582C0CCC2D00856919 /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		BF2D005F2C0DAF2A00856919 /* GroupAllQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAllQuotesViewController.swift; sourceTree = "<group>"; };
+		BF2D00612C0DAF4500856919 /* AllQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2D005E2C0CCCF700856919 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,28 @@
 		BF2D00362C0CB56700856919 /* helloChack */ = {
 			isa = PBXGroup;
 			children = (
+				BF2D00552C0CC63D00856919 /* model */,
 				BF2D00372C0CB56700856919 /* AppDelegate.swift */,
 				BF2D00392C0CB56700856919 /* SceneDelegate.swift */,
-				BF2D003B2C0CB56700856919 /* ViewController.swift */,
-				BF2D003D2C0CB56700856919 /* Main.storyboard */,
 				BF2D00402C0CB56900856919 /* Assets.xcassets */,
 				BF2D00422C0CB56900856919 /* LaunchScreen.storyboard */,
 				BF2D00452C0CB56900856919 /* Info.plist */,
+				BF2D004B2C0CB83000856919 /* QuoteViewController.swift */,
+				BF2D00512C0CC3DE00856919 /* CustomButton.swift */,
+				BF2D00532C0CC55800856919 /* NetworkManager.swift */,
+				BF2D00582C0CCC2D00856919 /* QuoteManager.swift */,
+				BF2D005F2C0DAF2A00856919 /* GroupAllQuotesViewController.swift */,
+				BF2D00612C0DAF4500856919 /* AllQuotesViewController.swift */,
 			);
 			path = helloChack;
+			sourceTree = "<group>";
+		};
+		BF2D00552C0CC63D00856919 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BF2D00562C0CC65200856919 /* Quote.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +108,9 @@
 			dependencies = (
 			);
 			name = helloChack;
+			packageProductDependencies = (
+				BF2D005D2C0CCCF700856919 /* RealmSwift */,
+			);
 			productName = helloChack;
 			productReference = BF2D00342C0CB56700856919 /* helloChack.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = BF2D002B2C0CB56700856919;
+			packageReferences = (
+				BF2D005A2C0CCCF700856919 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = BF2D00352C0CB56700856919 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +158,6 @@
 			files = (
 				BF2D00442C0CB56900856919 /* LaunchScreen.storyboard in Resources */,
 				BF2D00412C0CB56900856919 /* Assets.xcassets in Resources */,
-				BF2D003F2C0CB56700856919 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2D003C2C0CB56700856919 /* ViewController.swift in Sources */,
+				BF2D00622C0DAF4500856919 /* AllQuotesViewController.swift in Sources */,
+				BF2D00572C0CC65200856919 /* Quote.swift in Sources */,
+				BF2D004C2C0CB83000856919 /* QuoteViewController.swift in Sources */,
+				BF2D00602C0DAF2A00856919 /* GroupAllQuotesViewController.swift in Sources */,
+				BF2D00592C0CCC2D00856919 /* QuoteManager.swift in Sources */,
+				BF2D00522C0CC3DE00856919 /* CustomButton.swift in Sources */,
+				BF2D00542C0CC55800856919 /* NetworkManager.swift in Sources */,
 				BF2D00382C0CB56700856919 /* AppDelegate.swift in Sources */,
 				BF2D003A2C0CB56700856919 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF2D003D2C0CB56700856919 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF2D003E2C0CB56700856919 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF2D00422C0CB56900856919 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF2D005A2C0CCCF700856919 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF2D005D2C0CCCF700856919 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF2D005A2C0CCCF700856919 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF2D002C2C0CB56700856919 /* Project object */;
 }

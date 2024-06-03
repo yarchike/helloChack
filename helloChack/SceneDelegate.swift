@@ -16,8 +16,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: scene)
+        let tabBarViewController = UITabBarController()
+        
+        let quoteViewController = QuoteViewController()
+        let allQuotesViewController = AllQuotesViewController()
+        let groupAllQuotesViewController = GroupAllQuotesViewController()
+        
+        quoteViewController.refreshAllQuote = allQuotesViewController.refresh
+        quoteViewController.refreshGroupQuote = groupAllQuotesViewController.refresh
+        
+        quoteViewController.tabBarItem = UITabBarItem(title: "Цитата", image: UIImage(systemName: "quote.bubble"), tag: 0)
+        allQuotesViewController.tabBarItem = UITabBarItem(title: "Все цитаты", image: UIImage(systemName: "text.quote"), tag: 1)
+        groupAllQuotesViewController.tabBarItem = UITabBarItem(title: "Группы цитат", image: UIImage(systemName: "rectangle.3.group.bubble"), tag: 2)
+        let controllers = [UINavigationController(rootViewController: quoteViewController),UINavigationController(rootViewController: allQuotesViewController),UINavigationController(rootViewController: groupAllQuotesViewController)]
+        tabBarViewController.viewControllers = controllers
+        window.rootViewController = tabBarViewController
+        window.makeKeyAndVisible()
+        self.window = window
+        
+
+            }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
